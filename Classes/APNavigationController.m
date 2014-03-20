@@ -33,6 +33,7 @@
     self.dropDownToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     self.dropDownToolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     self.dropDownToolbar.tintColor = self.navigationBar.tintColor;
+    self.dropDownToolbar.hidden = YES;
     [self.navigationBar.superview insertSubview:self.dropDownToolbar belowSubview:self.navigationBar];
     self.originalNavigationBarTitle = self.navigationBar.topItem.title;
 }
